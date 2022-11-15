@@ -1,0 +1,32 @@
+body{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.container{
+    width: 100px;
+    height: 50px;
+    border: 1px gray solid;
+    border-radius: 30px;
+    background-color: lightgray;
+    display: flex;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: flex;
+    justify-content: flex-start;
+    transition-duration: 2s;
+}
+.circle:hover{
+    justify-content: flex-end;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"] + .circle{
+    justify-content: flex-end;
+}

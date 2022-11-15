@@ -1,0 +1,31 @@
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    transition-delay: 0;
+    transition-duration: 2s;
+    transition-property: width, background-color;
+    transition-timing-function: linear;
+}
+.box1:active{
+    width: 600px;
+    background-color: brown;
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    transition-delay: 0;
+    transition-duration: 2s;
+    transition-property: width, background-color;
+    transition-timing-function: linear;
+}
+.box2:hover{
+    width: 600px;
+    background-color: brown;
+}
+
+/* switch */
+
+/* switch end*/
