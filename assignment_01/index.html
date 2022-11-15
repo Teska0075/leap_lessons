@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <container class="contain ">
+        <section class="info">
+            <h1>General Information</h1>
+            <form id="form1" action="information.html">
+                <div class="name">
+                    <input id="firstname" name="fname" type="text" placeholder="First Name">
+                    <input id="lastname" name="lname" type="text" placeholder="Last Name">
+                </div>
+                <div class="email inpt">
+                    <input id="email" name="email" type="email" placeholder="Email">
+                </div>
+                <div class="date inpt">
+                    <input id="date" name="date" type="date">
+                </div>
+                <div class="company inpt">
+                    <input id="company" name="company" type="text" placeholder="Company">
+                </div>
+                <div class="position">
+                    <select id="position" name="position" >
+                        <option value="" disabled selected hidden>Position</option>
+                        <option value="ceo">CEO</option>
+                        <option value="director">Director</option>
+                        <option value="engineer">Engineer</option>
+                    </select>
+                </div>
+            </form>
+        </section>
+    
+        <section class="contact">
+            <h1>Contact Details</h1>
+            <form id="form2" action="contact.html">
+                <div class="street">
+                    <input id="street" name="street" type="text" placeholder="Street">
+                </div>
+                <div class="add_info">
+                    <input id="add_info" name="info" type="text" placeholder="Additional Information">
+                </div>
+                <div class="zip_place">
+                    <input id="zip" name="zip_code" type="number" placeholder="Zip Code">
+                    <select id="place" name="place">
+                        <option value="" disabled selected hidden>Place</option>
+                        <option value="0">Tokyo</option>
+                        <option value="1">Berlin</option>
+                    </select>
+                </div>
+                <div class="country">
+                    <select id="country" name="country">
+                        <option value="" disabled selected hidden>Country</option>
+                        <option value="usa">USA</option>
+                        <option value="germany">Germany</option>
+                        <option value="japan">Japan</option>
+                        <option value="russia">Russia</option>
+                    </select>
+                </div>
+                <div class="code_phone">
+                    <input id="code" name="code" type="number" placeholder="Code">
+                    <input id="phone" name="phone_number" type="tel" placeholder="Phone Number">
+                </div>
+                <div>
+                    
+                </div>
+            </form>
+        </section>
+    </container>
+</body>
+</html>

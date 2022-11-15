@@ -1,0 +1,15 @@
+.box{
+    width: 500px;
+    height: 100px;
+    background: grey;
+    transition-delay: 0;
+    transition-duration: 2s;
+    transition-property: all;
+    transition-timing-function: linear;
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50px;
+}
