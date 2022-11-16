@@ -21,7 +21,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: orange;
+    background-color: #005C53;
   }
   
   .logo {
@@ -33,6 +33,7 @@
   
   nav ul {
     display: flex;
+    margin-right: 30px;
   }
   
   ul li {
@@ -47,7 +48,7 @@
   }
   
   ul li a:hover {
-    color: blueviolet;
+    color: #DBF227;
   }
   
   input[type="checkbox"] {
@@ -55,6 +56,7 @@
     width: 30px;
     height: 30px;
     opacity: 0;
+    cursor: pointer;
   }
   
   .icon {
@@ -72,21 +74,20 @@
   /* Mobile screen */
   @media screen and (max-width: 480px) {
     body {
-      background-color: red;
+      background-color: #07a394;
     }
   }
   /* ipad and tablet */
   @media screen and (min-width: 481px) and (max-width: 768px) {
     body {
-      background-color: blue;
+      background-color: #07a394;
     }
-    h1 {
-    }
+
   }
   /* small sreens and laptops */
   @media screen and (min-width: 480px) and (max-width: 1024px) {
     body {
-      background-color: salmon;
+      background-color: #042940;
     }
     .icon {
       display: block;
@@ -97,14 +98,15 @@
       position: absolute;
       top: 80px;
       width: 200px;
-      background-color: orange;
+      background-color: #005C53;
       height: calc(100vh - 80px);
       transition-property: right;
       transition-duration: 1s;
     }
   
     input[type="checkbox"]:checked + .icon {
-      color: blueviolet;
+      color: #DBF227;
+      
     }
   
     input[type="checkbox"]:checked ~ .menu-wrap {
@@ -124,6 +126,6 @@
   /* Desktop screen */
   @media screen and (min-width: 1025px) and (max-width: 1200px) {
     body {
-      background-color: violet;
+      background-color: #07a394;
     }
   }
