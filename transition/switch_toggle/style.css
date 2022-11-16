@@ -12,16 +12,17 @@ body{
 
 input[type="checkbox"]{
     position: relative;
-    width: 500px;
+    width: 400px;
     height: 200px;
     appearance: none;
     border: 5px gray solid;
-    background: #c6c6c6;
+    background: #b4b4b4;
+    box-shadow: inset 0 0 10px;
     border-radius: 200px;
     transition: 0.5s;
 }
 input:checked[type="checkbox"]{
-    background-color: #0fa9f4;
+    background-color: #059ce7;
 }
 input[type="checkbox"]::before{
     content: '';
@@ -37,5 +38,5 @@ input[type="checkbox"]::before{
 }
 
 input:checked[type="checkbox"]::before{
-    left: 300px;
+    left: 200px;
 }

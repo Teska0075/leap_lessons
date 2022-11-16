@@ -1,0 +1,58 @@
+body{
+    background-color: teal;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* mobile display */
+@media screen and (max-width: 480px) {
+body{
+    background-color: black;
+}
+h1{
+    display: none;
+}
+h1:nth-child(1) {
+    display: block;
+    color: white;
+}
+}
+
+/* tablet display */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body{
+        background-color: gray;
+    }
+    h1{
+        display: none;
+    }
+    h1:nth-child(2) {
+        display: block;
+    }
+}
+
+/* desktop display */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body{
+        background-color: lightgray;
+    }
+    h1{
+        display: none;
+    }
+    h1:nth-child(3){
+        display: block;
+    }
+}
+
+/* bigger display */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    body{
+        background-color: whitesmoke;
+    }
+    h1{
+        display: none;
+    }
+    h1:nth-child(4){
+        display: block;
+    }
+}
