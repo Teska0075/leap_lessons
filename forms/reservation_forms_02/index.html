@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+</head>
+<body>
+    <div style="margin: auto; padding: 10px; background-color: #cc1650; width: 600px; text-align: center; color: white;">
+        Welcome to the 24x7 Fitness Club : Courts Reservation Page!!
+    </div>
+    <div style="margin: auto; margin-top: 10px; padding: 15px; width: 600px; border: 2px darkred dashed ; text-align: center;">
+        <fieldset>
+            <legend>Member Demograpghics</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name">
+            <br>
+            <label>Are you Member?</label>
+            <div>
+                <input type="radio" name="member">
+                <label for="member">Member</label>
+                <input type="radio" name="member">
+                <label for="member">Non-member</label>
+            </div>
+            <label for="mail">Email</label>
+            <input type="email" name="email">
+        </fieldset>
+        <label for="facility">Facility</label>
+        <select name="facility">
+            <option>Badminton</option>
+            <option>Boxing</option>
+            <option>Fitness</option>
+            <option>CrossFit</option>
+        </select>
+        <br>
+        <br>
+        <div>
+            <label for="date">Select a reservation date and time:</label>
+            <br>
+            <br>
+            <input type="date" name="date">
+            <input type="time" name="date">
+        </div>
+        <br>
+        <input type="radio" name="agreement">
+        <label for="agreement">I agree to the club's reservation policy</label>
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT">
+    </div>
+</body>
+</html>
