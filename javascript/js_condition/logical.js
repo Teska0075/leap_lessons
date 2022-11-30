@@ -195,3 +195,10 @@ if(bmi > 30){
 }else if (bmi < 18.5){
     console.log("jingiin dutagdaltai");
 }
+
+// Tip
+
+let price = prompt(`uniin dung oruulna u`);
+let price1 = Number(price);
+
+console.log(price1 <= 30000 && price1 >= 5000 ? price1 * 0.15 + price1 : price1 * 0.2 + price1);
