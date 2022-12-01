@@ -64,3 +64,39 @@ console.log("y =" + y);
 console.log("z =" + z);
 console.log("p =", x + y + z);
 
+// Тойргийн талбайг олох 
+let r = 5;
+let area = 3.14 * (r * r);
+
+console.log(area);
+
+// m = y2-y1/x2-x1 хариуг олох 
+
+let x1 = 3;
+let x2 = 5;
+let y1 = 6;
+let y2 = 8;
+
+let m = (y2 - y1) / (x2 - x1);
+
+console.log(m);
+
+// 15 Gegabyte нь хэдэн биттэй тэнцүү вэ ?
+
+let gb = 15;
+let bit = gb * (1024 ** 3) * 8;
+
+console.log(`15 GB = ` + bit + `bit`);
+
+// 15 МB дата 3 секундэд манай интернэт онлайнаар татаж чаддаг бол түүнийг BIT Rate-ийг олно уу.
+
+let mb = 15;
+let second = 3;
+let byte = mb * (10 ** 6);
+let bitRate = byte / second ;
+
+console.log(bitRate);
+
+//  side1, side2, side3 гэсэн хувьсагчдад гурвалжны гурван талыг онооно. Ийнхүү гурван тал өгөдсөн байхад үед гурвалжны талбайг ол.
+
+
