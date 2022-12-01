@@ -80,13 +80,13 @@ console.log(year + `-` + formattedNumber1 + `-` + formattedNumber2);
 let phoneNumber = prompt(`Enter ur phone number`);
 let two = phoneNumber.substring(0, 2);
 
-if (two == `98`){
+if (two == `98` || `93`){
     console.log(`G-Mobile`);
-}else if(two == `99`){
+}else if(two == `99` || `94` || `95`){
     console.log(`Mobicom`);
-}else if(two == `88`){
+}else if(two == `88` || `89` || `84` || `86`){
     console.log(`Unitel`);
-}else if(two == `91`){
+}else if(two == `91` || `96` || `90`){
     console.log(`Skytel`);
 }else{
     console.log(`Can't find ur operator`);
