@@ -48,18 +48,18 @@
 // count = count + 1;
 // }
 
-// js array
+// ARRAY
 
-// let studentNames = ['boldo', 'dorjo', 'tsetsgee','dulmaa']
-// let i = 0;
-// while (i < studentNames.length) {
+let studentNames = ['boldo', 'dorjo', 'tsetsgee','dulmaa']
+let i = 0;
+while (i < studentNames.length) {
 
-//     if (studentNames[i][0] === 'd') {
-//     console.log(studentNames[i]);
-//     }
-//     i++;
+    if (studentNames[i][0] === 'd') {
+    console.log(studentNames[i]);
+    }
+    i++;
 
-// }
+}
 
 // let studentAges = [10, 20, 15, 19, 18,19 ,19];
 // let i = 0;
@@ -80,3 +80,44 @@
 // console.log(userBalance);
 
 
+// FUNCTION
+
+function sainuu(){
+    console.log(`Hello Pinecone`);
+}
+
+sainuu ();
+
+function say(name){
+    console.log(`Sainuu ` + name);
+}
+
+say(`Teska`);
+
+function add(a, b){
+    return a + b;
+}
+
+function sub(a, b){
+    return a - b;
+}
+
+function multi(a, b){
+    return a * b;
+}
+
+function div(a, b){
+    return a / b;
+}
+
+let resAdd = add(10, 5);
+console.log("c =", resAdd);
+
+let resSub = sub(10, 5);
+console.log(`c =`, resSub);
+
+let resMulti = multi(10, 5);
+console.log(`c =`, resMulti);
+
+let resDiv = div(10, 5);
+console.log(`c =`, resDiv);
