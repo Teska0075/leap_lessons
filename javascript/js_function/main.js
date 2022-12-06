@@ -15,61 +15,37 @@
 
 // 2. Өгөгдсөн array -аас өгөгдсөн тоо байгаа эсэхийг олох функц бич. Тухайн тоо байвал индексийг буцаана. Байхгүй бол -1 буцаана.
 
-// let randomNums1 = [1,2,3,4,5,6,7,8,9];
-// function find(a,randomNums) {
-//     let stat = -1;
-//     for(let i = 0; i < randomNums.length; i++){
-//         let name = randomNums[i]
-//         if (name == a) {
-//             stat = `${randomNums[i]}`;
-//             break;
-//         }
-//     } 
-//     return stat;
-// }
-// find(9, randomNums1);
+let randomNums1 = [1,2,3,4,5,6,7,8,9];
+function find(a,randomNums) {
+    for(let i = 0; i < randomNums.length; i++){
+        if (randomNums[i] == a ) {
+            return a;
+        }
+    }
+    return -1;
+}
+console.log(find(1, randomNums1));;
 
+// 3. Өгөгдсөн тэмдэгт мөрөөс -аас өгөгдсөн тэмдэгт байгаа эсэхийг олох функц бич. Тухайн тэмдэгт байвал индексийг буцаана. Байхгүй бол -1 буцаана.
 
-// for(let i = 0; i < randomNums.length; i++){
-//     if (randomNums[i] == num ) {
-//         console.log(randomNums[i]);
-//     }else{
-//         console.log(-1);
-//     }
-// }
+let symbols = [`q`, `w`, `e`, `r`, `t`, `y`];
+function icon(a, sym){
+    for(let i=0; i < sym.length; i++){
+        if (sym[i] === a ){
+            return a
+        }
+    }
+    return -1;
+}
 
-// let i = 0;
-// while (i < randomNums.length) {
+console.log(icon(`l`,symbols));
 
-//      if (randomNums[i] == num ) {
-//      console.log(randomNums[i]);
-//      }else{
-//         console.log(-1)
-//      }
-//      i++;
-// }
+// 4. Өгөгдсөн 2 тоон интервал дахь санамсаргүй тоо буцаах функц бич.
 
-// for(let i = 0; i < randomNums; i++){
-//     if (randomNums[i] == num ) {
-//         console.log(randomNums[i]);
-//         }else{
-//             console.log(-1);
-//         }
-// }
+function pick1(a, b){
+    return Math.round(Math.random() * (b - a) + a); 
+}
 
-// let randomNums = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-// function find(a,randomNum1){
+console.log(pick1(1, 6));
 
-//     let stat = `-1`;
-
-//     for(let i=0;i < randomNum1; i++){
-//         let name = randomNums[i];
-//         if(name == a){
-//             stat = i;
-//             break;
-//         }
-//     }
-//     return stat;
-// }
-
-// console.log(find(2,randomNums));
+// 5. Өгөгдсөн array - ийн дундажыг олох функц бич.

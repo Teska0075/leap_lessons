@@ -45,7 +45,8 @@ if (gender = "male" && age1 >=18){
     console.log("Nasand hureegui esvel huis tohirohgui bna");
 }
 
-// bodlogo 1
+// Хувьсагч
+// 1.
 
 let a = 85,
     b=75,
@@ -71,7 +72,7 @@ if (d > 80){
 
 console.log("sum =", sum);
 
-// bodlogo 2
+// 2.
 
 let w = 3,
     x = 7,
@@ -195,6 +196,54 @@ if(bmi > 30){
 }else if (bmi < 18.5){
     console.log("jingiin dutagdaltai");
 }
+
+// easy6
+
+let num = parseInt(prompt(`Tegsh sondgoig shalgah`));
+
+if (num%2 === 0 ){
+    num = `tegsh too bna`
+}else{
+    num = `sondgoi too bna`
+}
+
+console.log(num);
+
+// easy7
+
+let num1 = parseInt(prompt(`eyreg sorog toog shalgah`));
+
+if (num1 > 0){
+    num1 = `eyreg too bna`
+}else{
+    num1 = `sorog too bnee`
+}
+
+console.log(num1);
+
+// easy8
+
+let yearOfBirth = parseInt(prompt(`Torson onoo oruulna uu`));
+
+let old = 2022 - yearOfBirth;
+
+if (0 <= old && old <= 1){
+    old = "Infant";
+} else if(1 < old && old <= 3){
+    old = "Toddler";
+} else if(3 < old && old <= 5){
+    old = "Preschool"
+} else if(5 < old && old <= 12){
+    old = "Gradeschooler"
+} else if(12 < old && old <= 18){
+    old = "Teen"
+} else if(18 < old && old <= 21){
+    old = "Young adult"
+} else if(21 < old){
+    old = "Adult"
+}
+
+console.log(`You are: ${old}`);
 
 // Tip
 
