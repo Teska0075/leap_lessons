@@ -50,16 +50,16 @@
 
 // ARRAY
 
-let studentNames = ['boldo', 'dorjo', 'tsetsgee','dulmaa']
-let i = 0;
-while (i < studentNames.length) {
+// let studentNames = ['boldo', 'dorjo', 'tsetsgee','dulmaa']
+// let i = 0;
+// while (i < studentNames.length) {
 
-    if (studentNames[i][0] === 'd') {
-    console.log(studentNames[i]);
-    }
-    i++;
+//     if (studentNames[i][0] === 'd') {
+//     console.log(studentNames[i]);
+//     }
+//     i++;
 
-}
+// }
 
 // let studentAges = [10, 20, 15, 19, 18,19 ,19];
 // let i = 0;
@@ -82,42 +82,47 @@ while (i < studentNames.length) {
 
 // FUNCTION
 
-function sainuu(){
-    console.log(`Hello Pinecone`);
-}
+// function sainuu(){
+//     console.log(`Hello Pinecone`);
+// }
 
-sainuu ();
+// sainuu ();
 
-function say(name){
-    console.log(`Sainuu ` + name);
-}
+// function say(name){
+//     console.log(`Sainuu ` + name);
+// }
 
-say(`Teska`);
+// say(`Teska`);
 
-function add(a, b){
-    return a + b;
-}
+// function add(a, b){
+//     return a + b;
+// }
 
-function sub(a, b){
-    return a - b;
-}
+// function sub(a, b){
+//     return a - b;
+// }
 
-function multi(a, b){
-    return a * b;
-}
+// function multi(a, b){
+//     return a * b;
+// }
 
-function div(a, b){
-    return a / b;
-}
+// function div(a, b){
+//     return a / b;
+// }
 
-let resAdd = add(10, 5);
-console.log("c =", resAdd);
+// let resAdd = add(10, 5);
+// console.log("c =", resAdd);
 
-let resSub = sub(10, 5);
-console.log(`c =`, resSub);
+// let resSub = sub(10, 5);
+// console.log(`c =`, resSub);
 
-let resMulti = multi(10, 5);
-console.log(`c =`, resMulti);
+// let resMulti = multi(10, 5);
+// console.log(`c =`, resMulti);
 
-let resDiv = div(10, 5);
-console.log(`c =`, resDiv);
+// let resDiv = div(10, 5);
+// console.log(`c =`, resDiv);
+
+
+// ARRAY METHOD
+
+ 
