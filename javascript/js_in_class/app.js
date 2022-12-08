@@ -125,4 +125,9 @@
 
 // ARRAY METHOD
 
- 
+// let arr = [2,1,7,5];
+
+// arr.sort((a, b) => (a < b ? 1 : -1));
+
+// console.log(arr);
+
