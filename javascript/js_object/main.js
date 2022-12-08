@@ -56,22 +56,24 @@ function ageAverage(){
 
 ageAverage();
 
-function sameAge(){
+function lastName(){
+    let lname = ["Zaya", "Soyoloo", "Tsendee", "Erdenee", "Manlai"];
     for(let i = 0; i < students1.length; i++){
-        let sum = 0;
+        students1[i].lastName = lname[i];
+    }
+    console.log(students1);
+}
+lastName();
 
-        sum += students1[i].age
-
-        console.log(sum);
-
-
-
-        // if(students1[i].age == students1[i].age){
-        //     let res = 0;
-        //     res += students1[i].age
-            
-        //     console.log(res);
-        // }
+function sameAge(){
+    for(let i = 0; i < students1.length-1; i++){
+        for(let h = i+1; h <students1.length; h++){
+            if(students1[i].age === students1[h].age){
+                let res = [];
+                res.push(students1[i].name, students1[h].name);
+                console.log(res + ` are ` + students1[i].age + ` years old`);
+            }
+        }
     }
 }
 
@@ -172,4 +174,125 @@ function relStat(){
 }
 relStat();
 
-// 
+// MERN object
+console.log(`MERN object`);
+
+const users = [
+    {name: `Alex`,
+    email: 'alex@alex.com',
+    skills: ['HTML', 'CSS', 'JavaScript'],
+    age: 45,
+    isLoggedIn: false,
+    points: 30
+    },
+
+    {name: `Job`,
+    email: 'job@job.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
+    age: 25,
+    isLoggedIn: false,
+    points: 50
+    },
+
+    {name: `Brook`,
+    email: 'daniel@daniel.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
+    age: 39,
+    isLoggedIn: true,
+    points: 50
+    },
+
+    {name: `Daniel`,
+    email: 'daniel@alex.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
+    age: 25,
+    isLoggedIn: false,
+    points: 40
+    },
+
+    {name: `John`,
+    email: 'john@john.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
+    age: 20,
+    isLoggedIn: true,
+    points: 50
+    },
+
+    {name: `Thomas`,
+    email: 'thomas@thomas.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+    age: 18,
+    isLoggedIn: false,
+    points: 40
+    },
+
+    {name: `Paul`,
+    email: 'paul@paul.com',
+    skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
+    age: 25,
+    isLoggedIn: false,
+    points: 40
+    }
+]
+
+console.log(users[0]);
+
+function mostSkills(user){
+    for(let i = 0; i < users.length-1; i++){
+        for(let j = i + 1; j < users.length; j++){
+            let max = 0;
+            if(max < user[j].skills.length){
+                max = user[j].skills.length;
+                ner = user[j].name;
+                console.log(ner);
+            }
+        }
+    }
+}
+mostSkills(user);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function proSkill(arr){
+//     let max = 0;
+//     for(let i = 0; i < arr.length - 1; i++){
+//         for(let j = i + 1; j < arr.length; j++){
+//             if(max < arr[j].skills.length){
+//                 max = arr[j].skills.length;
+//                 ner = arr[j].name
+//             }
+        
+//         }
+//     }
+//     return ner;
+// }
+// console.log(proSkill(users));
+
+
+
+// console.log(`newtersen hereglegch: ${users.length}`);
+// let over50 = [];
+// for(let i = 0; i < users.length; i++){
+//     if(users[i].points >= 50){
+//         over50.push(users[i].name);
+//     }
+// }
+// console.log(over50);
