@@ -49,3 +49,27 @@ function pick1(a, b){
 console.log(pick1(1, 6));
 
 // 5. Өгөгдсөн array - ийн дундажыг олох функц бич.
+// let arrayOfNumbers = [43, 56, 23];
+
+// let sum = 0;
+
+// for(let i=0; i < arrayOfNumbers.length; i++){
+//     sum = sum + arrayOfNumbers[i];
+// }
+// let a = sum / arrayOfNumbers.length
+
+// console.log(`Sum of all numbers: ${a}`);
+
+function findAverage(array){
+    let average = 0;
+    for (let i=0; i < array.length; i++){
+        average += array[i];
+    }
+    average = average / array.length;
+    return average;
+}
+
+console.log(findAverage([43, 56, 23]));
+
+
+
