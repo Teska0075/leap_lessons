@@ -74,30 +74,59 @@ console.log("sum =", sum);
 
 // 2.
 
-let w = 3,
-    x = 7,
-    y = 2,
-    z = 4;
+let w2 = 3,
+    x2 = 7,
+    y2 = 2,
+    z2 = 4;
 let ans = 1;
 
-if (w < 5){
-    ans = ans * w;
+if (w2 < 5){
+    ans = ans * w2;
 }
 
-if (x < 5){
-    ans = ans * x;
+if (x2 < 5){
+    ans = ans * x2;
 }
 
-if (y < 5){
-    ans = ans * y;
+if (y2 < 5){
+    ans = ans * y2;
 }
 
-if (z < 5){
-    ans = ans * z;
+if (z2 < 5){
+    ans = ans * z2;
 }
 
 console.log(ans);
 
+// Assignment-1
+// 1.
+
+let i = 4 > 3; //true
+let iii = 4 < 3; //false
+let ii = 4 >= 3; //true
+let iv = 4 <= 3; //false
+let v = 4 == 4; //true
+let vi = 4 === 4; //true
+let vii = 4 != 4; //false
+let iix = 4 !== 4; //false
+let ix = 4 != "4"; //false
+let x = 4 == "4"; //true
+let xi = 4 === "4"; //false
+
+console.log(x);
+//2.
+
+let one = 4 > 3 && 10 < 12; // true
+let two = 4 > 3 && 10 > 12; // false
+let three = 4 > 3 || 10 < 12; // true
+let four = 4 > 3 || 10 > 12; // true
+let five = !(4 > 3); // false
+let six = !(4 < 3); // true
+let eight = !(4 > 3 && 10 < 12); // false
+let nine = !(4 > 3 && 10 > 12); // true
+let ten = !(4 === "4"); // true
+
+console.log(ten);
 // easy1
 
 let n = 77;
@@ -244,6 +273,121 @@ if (0 <= old && old <= 1){
 }
 
 console.log(`You are: ${old}`);
+
+// Өндөр жилийг олно уу.
+
+let leapYear = 2004;
+
+if(leapYear % 400 == 0){
+    leapYear = `It is a leap year`
+} else if(leapYear % 100 == 0 ){
+    leapYear = `It is NOT a leap year`
+} else if(leapYear % 4 == 0){
+    leapYear = `It is a leap year`
+} else {
+    leapYear = `It is NOT a leap year`
+}
+
+console.log(leapYear);
+
+// Өгөгдсөн тоонуудын хамгийн их болон хамгийн багыг олно уу.
+
+let a1 = 9;
+let b1 = 5;
+let c1 = 7;
+
+let res1;
+
+if(c1 < b1){
+    res1 = c1;
+} else if(b1 < a1){
+    res1 = b1;
+} else {
+    res1 = a1;
+}
+
+console.log(`Хамгийн бага тоо ${res1}`);
+
+if(a1 > b1){
+    res1 = a1;
+} else if(b1 > c1){
+    res1 = b1;
+} else {
+    res1 = a1;
+}
+
+console.log(`Хамгийн их тоо ${res1}`);
+
+// 4 тооны бага
+
+let numba1 = 120;
+let numba2 = 33;
+let numba3 = 10;
+let numba4 = 12;
+let out;
+
+if(numba4 < numba3){
+    out = numba4;
+} else if(numba3 < numba2){
+    out = numba3;
+} else if(numba2 < numba1){
+    out = numba2
+} else {
+    out = numba1
+}
+
+console.log(`hamgiin baga too ${out}`);
+
+
+// Сурагчдын шалгалтын дүнг гаргаарай
+
+let ner = prompt(`Suragchiin neriig oruulna u`);
+let onoo = parseInt(prompt(`Suragchiin avsan onoog oruulna u`))
+let res;
+
+if(onoo < 59){
+    res = `Маш муу`
+} else if(60 < 69){
+    res = `Хангалттай`
+} else if(70 < 79){
+    res = `Дунд`
+} else if(80 < 89){
+    res = `Сайн`
+} else if(90 < 100){
+    res = `Маш сайн`
+}
+console.log(`НЭР: ${ner}. АВСАН ОНОО: ${onoo}. ҮНЭЛГЭЭ: ${res}`);
+
+// Тэмцээн
+
+let teamA1 = 96;
+let teamA2 = 108;
+let teamA3 = 120; //97
+
+let teamB1 = 88;
+let teamB2 = 91;
+let teamB3 = 110; //96
+
+let scoreA = (teamA1 + teamA2 + teamA3)/3;
+let scoreB = (teamB1 + teamB2 + teamB3)/3;
+
+let result;
+
+if(scoreA >= 100 || scoreB >= 100){
+    if(scoreA > scoreB){
+     result = `Team A is a WINNER`
+    } else if (scoreB > scoreA){
+     result = `Team B is a WINNER`
+    }else{
+     result = `TIE`
+    }
+}else{
+ result = `There is NO winner`
+}
+
+console.log(result);
+
+
 
 // Tip
 

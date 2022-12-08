@@ -41,4 +41,28 @@ let secondNum = 255;
 console.log(Math.round(Math.random() * (secondNum - firstNum) + firstNum));
 
 // validate phone number
+let phoneNum = prompt(`Enter ur phone number`);
+// let phoneNum = `+97689803320`;
+if(phoneNum.length === 12){
+    if(phoneNum[0] === `+` && parseInt(phoneNum.substring(1, 3)) === 976){
+        if(parseInt(phoneNum(4)) === Number){
+            console.log(`${phoneNum} is a right phone number`);
+        }
+    }
+} else {
+    console.log(`WRONG NUMBER`);
+}
 
+// Register Number Validation
+
+let register = prompt("registeriin dugaaraa oruulna uu");
+
+if(register.length === 10){
+    if(isNaN(parseInt(register[0])) && isNaN(parseInt(register[1]))){
+        if(parseInt(register.substring(2))){
+            console.log("Та монгол улсын регистрийн дугаарыг зөв орууллаа");
+        } 
+    } 
+} else { 
+    console.log("Та монгол улсын иргэний бүртгэлийн дугаарыг буруу орууллаа");
+}
