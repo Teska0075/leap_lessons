@@ -1,5 +1,5 @@
 // Accessing Objects
-console.log(`Accessing objects`);
+console.log(`=== Accessing objects ===`);
 
 let students1 = [
     {
@@ -81,7 +81,7 @@ sameAge();
 
 
 // Simple Object
-console.log(`Simple Object`);
+console.log(`=== Simple Object ===`);
 
 let nohoi = {}
 
@@ -96,7 +96,7 @@ nohoi.shinj = `overall shape`;
 console.log(nohoi);
 
 // Animals
-console.log(`Animals`);
+console.log(`=== Animals ===`);
 
 let animals = [
     {type: "dog", 
@@ -123,6 +123,7 @@ animals[1].printSound();
 animals[2].printSound();
 
 // Сурагчид
+console.log(`=== Сурагчид ===`);
 
 let students = [
     {name: "Гончигоо",
@@ -175,7 +176,7 @@ function relStat(){
 relStat();
 
 // MERN object
-console.log(`MERN object`);
+console.log(`=== MERN object ===`);
 
 const users = [
     {name: `Alex`,
@@ -235,64 +236,343 @@ const users = [
     }
 ]
 
-console.log(users[0]);
+console.log(`User info`,users[0]);
 
-function mostSkills(user){
-    for(let i = 0; i < users.length-1; i++){
-        for(let j = i + 1; j < users.length; j++){
-            let max = 0;
-            if(max < user[j].skills.length){
-                max = user[j].skills.length;
-                ner = user[j].name;
-                console.log(ner);
+
+// olon skilltei hereglegch
+
+function mostSkills(skill){
+    let max = 0;
+    for(let i = 0; i < skill.length - 1; i++){
+        for(let j = i + 1; j < skill.length; j++){
+            if(max < skill[j].skills.length){
+                max = skill[j].skills.length;
+                ner = skill[j].name
+            }
+        
+        }
+    }
+    return ner;
+}
+console.log(`User who has most skills: `,mostSkills(users));
+
+// nevtersen hereglegchig
+
+let loggedUsers = (logIn) =>{
+    let count = 0;
+    for(let i = 0; i < users.length; i++){
+        if(users[i].isLoggedIn){
+            count++;
+        }
+    }
+    return count
+}
+
+console.log(`Users logged in: `,loggedUsers(users));
+
+// 50-s deesh onoo avsan
+
+let highestPoint = (point) =>{
+    let highScored = [];
+    for(let i = 0; i < users.length; i++){
+        if(users[i].points >= 50){
+            highScored.push(users[i].name);
+        }
+    }
+    return highScored;
+}
+
+console.log(`Users who has 50+ points: `,highestPoint(users));
+
+// MERN dev
+
+let mernDev = (stack) => {
+    let mern = [];
+    for(let i = 0; i < users.length; i++){
+        if(users[i].skills.includes('MongoDB', 'Express', 'React', 'Node')){
+            mern.push(users[i].name);
+        }
+    }
+    return mern;
+}
+
+console.log(`MERN devs: `, mernDev(users));
+
+// Oldest three
+
+let eldestUsers = (old) => {
+    let age = [];
+
+    for(let i = 0; i < users.length; i++){
+        age.push(users[i].age);
+    }
+    
+    age.sort(function(a, b){
+        if (a > b){
+            return -1;
+        }else{
+            return 1;
+        }
+    })
+
+    let eldestAge = age.slice(0,3);
+
+    let eldestData = [];
+
+    for(let i = 0; i < eldestAge.length; i++){
+        for(let j = 0; j < users.length; j++){
+            if(users[j].age === eldestAge[i]){
+                eldestData.push(users[j]);
             }
         }
     }
+
+    return eldestData.slice(0,3)
 }
-mostSkills(user);
 
+console.table(eldestUsers(users));
 
+// Дэлгүүрийн - Тайлан
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function proSkill(arr){
-//     let max = 0;
-//     for(let i = 0; i < arr.length - 1; i++){
-//         for(let j = i + 1; j < arr.length; j++){
-//             if(max < arr[j].skills.length){
-//                 max = arr[j].skills.length;
-//                 ner = arr[j].name
-//             }
-        
-//         }
-//     }
-//     return ner;
-// }
-// console.log(proSkill(users));
-
-
-
-// console.log(`newtersen hereglegch: ${users.length}`);
-// let over50 = [];
-// for(let i = 0; i < users.length; i++){
-//     if(users[i].points >= 50){
-//         over50.push(users[i].name);
-//     }
-// }
-// console.log(over50);
+const data = [
+    {
+        productName: `Bakery`,
+        unitPrice: 2500,
+        amount: 200,
+        totalPrice: 50000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Chocolate`,
+        unitPrice: 3000,
+        amount: 18,
+        totalPrice: 54000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Milk`,
+        unitPrice: 4100,
+        amount: 100,
+        totalPrice: 4100000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Yogurt`,
+        unitPrice: 5900,
+        amount: 0,
+        totalPrice: 295000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Butter`,
+        unitPrice: 3700,
+        amount: 60,
+        totalPrice: 220000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Bread`,
+        unitPrice: 2190,
+        amount: 200,
+        totalPrice: 438000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Sandwich bread`,
+        unitPrice: 2900,
+        amount: 120,
+        totalPrice: 348,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Egg 30pcs`,
+        unitPrice: 15900,
+        amount: 54,
+        totalPrice: 858000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Egg 10pcs`,
+        unitPrice: 5290,
+        amount: 60,
+        totalPrice: 317400,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Chicken`,
+        unitPrice: 23800,
+        amount: 43,
+        totalPrice: 1023400,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Beef`,
+        unitPrice: 16800,
+        amount: 80,
+        totalPrice: 1344000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Pork`,
+        unitPrice: 9000,
+        amount: 36,
+        totalPrice: 324000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Potato`,
+        unitPrice: 1250,
+        amount: 500,
+        totalPrice: 626000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Carrot`,
+        unitPrice: 2100,
+        amount: 300,
+        totalPrice: 630000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Onion`,
+        unitPrice: 2750,
+        amount: 88,
+        totalPrice: 242000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Beet`,
+        unitPrice: 4500,
+        amount: 20,
+        totalPrice: 90000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Garlic`,
+        unitPrice: 17200,
+        amount: 12,
+        totalPrice: 206400,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Rice`,
+        unitPrice: 14350,
+        amount: 650,
+        totalPrice: 9327000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Flour`,
+        unitPrice: 2450,
+        amount: 400,
+        totalPrice: 980000,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Veg oil`,
+        unitPrice: 7990,
+        amount: 50,
+        totalPrice: 399500,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Olive oil`,
+        unitPrice: 34503,
+        amount: 7,
+        totalPrice: 241521,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Jam`,
+        unitPrice: 9500,
+        amount: 19,
+        totalPrice: 180500,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Instant noodle`,
+        unitPrice: 5780,
+        amount: 51,
+        totalPrice: 294780,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Bottle of H2O`,
+        unitPrice: 1430,
+        amount: 123,
+        totalPrice: 175890,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Coke`,
+        unitPrice: 1050,
+        amount: 651,
+        totalPrice: 683550,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Toilet paper`,
+        unitPrice: 2300,
+        amount: 32,
+        totalPrice: 73600,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Soap`,
+        unitPrice: 2564,
+        amount: 12,
+        totalPrice: 30768,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Energy drink`,
+        unitPrice: 4600,
+        amount: 4,
+        totalPrice: 18400,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Strawberry`,
+        unitPrice: 6380,
+        amount: 15,
+        totalPrice: 95700,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+    {
+        productName: `Orange`,
+        unitPrice: 23960,
+        amount: 45,
+        totalPrice: 1066050,
+        casherId: 1,
+        date: `2022-11-01`
+    },
+]
