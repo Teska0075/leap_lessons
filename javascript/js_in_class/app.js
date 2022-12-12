@@ -131,3 +131,8 @@
 
 // console.log(arr);
 
+
+// DOM (DOCUMENT OBJECT MODEL)
+
+
+

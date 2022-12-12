@@ -1,11 +1,11 @@
 // // 1. 10 хүртэлх натурал тоог хэвлэх программ бич
-// console.log(`1.`);
+console.log(`1.`);
 
-// let count = 1;
-// while (count <= 10) {
-// console.log(count);
-// count = count + 1;
-// }
+let count = 1;
+while (count <= 3) {
+console.log(count);
+count = count + 1;
+}
 
 // // 2. 10 хүртэлх натурал тооны сондгой тоонуудыг хэвлэх программ бич
 // console.log(`2.`);

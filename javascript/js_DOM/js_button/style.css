@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.myBtn{
+    height: 50px;
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    background: greenyellow;
+    display: block;
+        
+}
+
+.container {
+    margin-top: 400px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.box{
+    border: 1px black solid;
+    width: 100px;
+    height: 100px;
+
+}
