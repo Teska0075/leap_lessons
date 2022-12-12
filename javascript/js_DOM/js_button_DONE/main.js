@@ -3,7 +3,7 @@ let colorIndex = 0;
 
 const body = document.getElementsByTagName("body")[0];
 
-const myBtn = document.getElementsByClassName("btns");
+const myBtn = document.getElementsByClassName("myBtn");
 
 const box = document.getElementsByClassName("box");
 
@@ -31,14 +31,16 @@ const colorPicker = () => {
 //     return clones
 // }
 
-const cloneBtn = ()
+// const cloneBtn = ()
 
-const node = document.getElementById("myBtn");
-const clone = node.cloneNode(true);
-document.getElementsByClassName("btns")[0].appendChild(clone);
+// const node = document.getElementById("myBtn");
+// const clone = node.cloneNode(true);
+// document.getElementsByClassName("btns")[0].appendChild(clone);
 
 
-btns.addEventListener("click", change);
+myBtn[0].addEventListener("click", change);
+myBtn[1].addEventListener("click", change);
+myBtn[2].addEventListener("click", change);
 
 // myBtn.addEventListener("click", changeBtn);
 

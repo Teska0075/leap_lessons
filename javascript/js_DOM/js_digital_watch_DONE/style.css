@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+.container{
+  margin: 100px; 
+  display: flex;
+  gap: 40px;
+  font-family: "Audiowide", sans-serif;                                               
+  font-weight: bold;
+  font-size: 100px;
+  color: greenyellow;
+}

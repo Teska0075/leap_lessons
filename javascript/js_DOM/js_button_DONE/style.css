@@ -29,7 +29,7 @@ body{
 }
 
 .box{
-    border: 1px black solid;
+    /* border: 1px black solid; */
     width: 100px;
     height: 100px;
 
