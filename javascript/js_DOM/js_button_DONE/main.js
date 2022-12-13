@@ -25,11 +25,16 @@ const colorPicker = () => {
 
 // const btnClone = () => {
 //     for(let i=0; i < 3; i++){
-//         let button = document.getElementById("myBtn");
-//         let clones = i * button;
+//         myBtn[i].addEventListener("click", change);        
 //     }
-//     return clones
 // }
+
+
+for(let i=0; i < 3; i++){
+    myBtn[i].addEventListener("click", change);        
+}
+
+
 
 // const cloneBtn = ()
 
@@ -38,9 +43,9 @@ const colorPicker = () => {
 // document.getElementsByClassName("btns")[0].appendChild(clone);
 
 
-myBtn[0].addEventListener("click", change);
-myBtn[1].addEventListener("click", change);
-myBtn[2].addEventListener("click", change);
+// myBtn[0].addEventListener("click", change);
+// myBtn[1].addEventListener("click", change);
+// myBtn[2].addEventListener("click", change);
 
 // myBtn.addEventListener("click", changeBtn);
 

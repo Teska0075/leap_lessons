@@ -1,7 +1,8 @@
 // Хамгийн эхний li элементийг аван утгыг console.log дээр хэвлэх
 
 let first = document.getElementById("aimag-101");
-console.log(first.innerHTML);
+console.log( first.innerHTML);
+console.log(document.querySelector);
 
 // Хамгийн сүүлийн li элементийг аван утгыг console.log дээр хэвлэх
 
