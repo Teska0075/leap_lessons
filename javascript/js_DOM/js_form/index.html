@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form class="error" id="form">
+                <h1>Бүртгэл Үүсгэх</h1>
+                <hr>
+
+                <label for="email"><b>E-mail</b></label>
+                <input type="text" placeholder="Enter E-mail" name="email" id="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+                <label for="repeatPsw"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="repeatPsw" id="repeatPsw" required>
+
+                <button type="submit" class="registerBtn" disabled>Бүртгүүлэх</button>
+                <div id="sms"></div>
+            </form>
+        </div>
+    </main>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
