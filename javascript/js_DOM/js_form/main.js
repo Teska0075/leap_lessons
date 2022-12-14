@@ -21,8 +21,7 @@ function validation(inputs) {
   const passwordValue = password.value.trim();
   const password2Value = password2.value.trim(); 
 
-
-
+  const result = true;
 
 
   if(emailValue === ''){
