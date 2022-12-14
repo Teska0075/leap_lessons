@@ -80,8 +80,8 @@ let edit = (e) =>{
     let removeBtn = document.getElementsByTagName("button")[1];
     console.log(removeBtn);
     removeBtn.remove();
+    git test
 
-    
 
 }
 
