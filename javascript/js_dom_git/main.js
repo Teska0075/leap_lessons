@@ -14,11 +14,11 @@ const taskList = document.getElementById("bottom_sec");
 
 const cardItem = (text) => {
     const item = `
-        <div id='todolist' class="d-flex form-control rounded-0 mt-2">
+        <div id='todolist' class="d-flex form-control rounded-2 mt-2">
             
-            <input class="form-control border-0 " type="text" name="task" id="task_bot" placeholder="test" value="${text}" readonly>
+            <input class="task_bot form-control border-0 " type="text" name="task" id="task_bot" placeholder="test" value="${text}" readonly>
 
-            <button onclick="edit()" class="btn"><i class="fa-solid fa-pen"></i></button>
+            <button onclick="edit(this)" class="btn"><i class="fa-solid fa-pen"></i></button>
 
             <button onclick="checked()" class="btn"><i class="fa-solid fa-check"></i></button>
 
@@ -48,12 +48,11 @@ document.addEventListener('keyup', (e) => {
 
 // configuration buttons
 
-const editBtn = document.getElementsByTagName("button")[1];
+let editBtn = document.getElementsByTagName("button")[1];
 const checkBtn = document.getElementsByTagName("button")[2];
 const delBtn = document.getElementsByTagName("button")[3];
 
 let ustgah = (e) => {
-    // alert('deleted');
     console.log(e.parentNode.parentNode);
 
     const parent = e.parentNode.parentNode;
@@ -62,30 +61,53 @@ let ustgah = (e) => {
     parent.removeChild(child);
 }
 
-let checked = (e) => {
+let checked = () => {
     document.querySelector("#task_bot").style.textDecoration = "line-through";
 }
 
 
-const save = `
-    <button><i class="fa-solid fa-floppy-disk"></i></button>
-`
-
 let edit = (e) =>{
-    let input = document.querySelector("#task_bot");
-    const inputValue = input.value
-    console.log(inputValue);
-    input.removeAttribute("readonly");
+    var editValue = prompt('edit the select item', e.parentNode.value);
+    e.parentNode.value = editValue;
+    console.log(editValue);
+    console.log(e.parentNode);
     
-    let removeBtn = document.getElementsByTagName("button")[1];
-    console.log(removeBtn);
-    removeBtn.remove();
-    git test
+    
+    
+    // let parent = e.parentNode.parentNode;
+    // let edit = parent.querySelector("input");
+    // console.log(edit);
+    // edit.removeAttribute("readonly");
 
 
+
+    // let input = document.querySelector(".task_bot");
+    // const inputValue = input.value
+    // console.log(inputValue);
+    // input.removeAttribute("readonly");
+    
+    // let removeBtn = document.getElementsByTagName("button")[1];
+    // console.log(removeBtn);
+    // editBtn.remove();
+    
+    // document.getElementsByTagName("button")[1].remove();
+
+    // let icon = document.getElementsByTagName("i")[0];
+    // icon.classList.toggle("fa-floppy-disk");
 }
 
 
+
+
+    // input.setAttribute("readonly")
+
+    // x.classList.toggle("fa-thumbs-down");
+
+const saveBtn = `<button onclick="save()" class="btn"><i class="fa-solid fa-floppy-disk"></i></button>`;
+// let save = (e) =>{
+//     let input = document.querySelector("#task_bot");
+//     input.append(saveBtn);
+// }
 
 
 

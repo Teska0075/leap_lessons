@@ -10,23 +10,23 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="container" class="container m-5 p-5 col-10 bg-white d-flex flex-column align-items-center"> 
+    <div id="container" class="container m-5 p-5 rounded-5 col-10 d-flex flex-column align-items-center"> 
 
         <div id="top_sec" class="top_sec col-12 d-flex flex-column  align-items-center">
             
-            <h1>Todo List App</h1>
+            <h1 class="text-white">Todo List App</h1>
 
             <div id="date_status" class="date_status col-5 d-flex justify-content-between">
 
-                <p id="date">Date: <span id="date_span">0000-00-00</span></p>
-                <p id="tasks_left" class="text-muted">0 tasks left!</p>
+                <p id="date" class="text-white">Date: <span id="date_span">0000-00-00</span></p>
+                <p id="tasks_left" class="text-black">0 tasks left!</p>
 
             </div>
         
-            <div class="d-flex col-10 ">
+            <div class="d-flex col-10">
                 
-                <input class="form-control rounded-0 p-3" id="task_top" type="text" placeholder="Enter task name" name="task" autofill="off">
-                <button id="add-btn" class="btn rounded-0 col-2">+ Add</button>
+                <input class="form-control rounded-0 rounded-start p-3" id="task_top" type="text" placeholder="Enter task name" name="task" autofill="off">
+                <button id="add-btn" class="btn text-white rounded-0 rounded-end col-3">+ Add</button>
                 
             </div>
 
@@ -34,7 +34,7 @@
 
         <div id="bottom_sec" class="bottom_section col-10 d-flex flex-column  align-items-center">
             
-            <h1 class="border-bottom border-secondary col-12 border-2 pt-3 text-center">Lists To Do</h1>
+            <h1 class="border-bottom border-white border-secondary col-12 border-2 pt-3 text-center text-white">Lists To Do</h1>
 
         </div>
 
