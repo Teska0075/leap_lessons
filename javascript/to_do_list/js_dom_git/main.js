@@ -10,10 +10,18 @@ document.getElementById("date_span").innerHTML = todayDate
 
 // task input
 
-
 const addBtn = document.getElementsByTagName("button")[0];
 const inputText = document.getElementById("task_top");
 const taskList = document.getElementById("bottom_sec");
+
+const inputValue = document.getElementById("task_top").value;
+const priority = document.getElementById("priority");
+
+const allTask = [
+    {name: "${input}", status: false, priority: "high"},
+    {name:"HTML", status: false, priority: "medium"}    
+]
+
 let count = 0;
 const cardItem = (text) => {
     const item = `
@@ -41,6 +49,14 @@ const addTask = () => {
         alert('Input must include something!');
     }else{
         taskList.innerHTML += cardItem(text);
+    }
+
+    // const done = allTask[i].status ? "done" : "";
+    
+    if(allTask[i].status === true){
+        input.style.textDecoration = "line-through";
+    }else{
+
     }
 
     task = document.getElementById("tasks_left");

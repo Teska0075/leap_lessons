@@ -29,6 +29,6 @@ body{
     color: red;
 }
 
-#add-btn{
+#add-btn, #priority{
     background-color: #8c00ff;
 }
