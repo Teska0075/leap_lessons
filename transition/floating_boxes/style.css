@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: azure;
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxes{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.box{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 20px  #00000080;
+}
+
+.b1{
+    left: 0px; 
+}
+.b2{
+    right: 0px; 
+}
+.b3{
+    bottom: 0px; 
+}
+.b4{
+    bottom: 0px;
+    right: 0px; 
+}
+
+.box_i{
+    width: 90px;
+    height: 90px;
+    opacity: 20%;
+    background-color: red;
+    transition-duration: 2.5s;
+}
+
+.bi1{
+    left: 0px;
+    top: 0px;
+}
+
+.bi2{
+    left: 0px;
+    top: 0px;
+}
+
+.bi3{
+    left: 0px;
+    top: 0px;
+}
+
+.bi4{
+    left: 0px;
+    top: 0px;
+}
+
+
+.boxes:hover .bi1{
+    top: -100px;
+    left: -100px;
+    position: absolute;
+    opacity: 40%;
+}
+
+.boxes:hover .bi2{
+    top: -100px;
+    left: 100px;
+    position: absolute;
+    opacity: 40%;
+}
+
+.boxes:hover .bi3{
+    top: 100px;
+    left: -100px;
+    position: absolute;
+    opacity: 40%;
+}
+
+.boxes:hover .bi4{
+    top: 100px;
+    left: 100px;
+    position: absolute;
+    opacity: 40%;
+}
