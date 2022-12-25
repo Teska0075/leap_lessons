@@ -27,7 +27,7 @@ body{
     gap: 10px;
 }
 
-input{
+.display{
     grid-column: span 4;
     height: 150px;
     width: 360px;
@@ -43,6 +43,18 @@ input{
     color: rgb(236, 193, 136);
 }
 
+.display-1{
+    font-size: 25px;
+    border-bottom: 1px rgb(236, 193, 136) solid;
+}
+
+.result{
+    text-align: start;
+    font-size: 20px;
+    opacity: 0.3;
+}
+
+
 button{
     width: 80px;
     height: 80px;
@@ -56,6 +68,12 @@ button{
     /* color: rgb(164, 163, 163); */
     color: rgb(236, 193, 136);
     transition: all 0.5s;
+}
+
+.btn-0{
+    grid-column: span 2;
+    width: 165px;
+    border-radius: 50px;
 }
 
 

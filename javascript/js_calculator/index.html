@@ -5,40 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
     <title>Calculator</title>
+    
 </head>
 <body>
     <div class="container">
-        <input type="text" name="output" id="output" placeholder="0" value="">
+
+        <div class="display">
+            <div class="display-1">0</div>
+            <div class="display-2">0</div>
+            <div class="result"></div>            
+        </div>
         
-        <button onclick="" class="symbol c" id="clear">C</button>
-        <button onclick="" class="symbol" id="negative">+/-</button>
-        <button onclick="" class="symbol" id="perc">&percnt;</button>
-        <button onclick="" class="symbol" id="divide">&divide;</button>
+        <button class="button symbol clear" >C</button>
+        <button class="button symbol delete">&#10094;</button>
+        <button class="button symbol operator">%</button>
+        <button class="button symbol operator">/</button>
 
-        <button onclick="" class="number" >7</button>
-        <button onclick="" class="number" >8</button>
-        <button onclick="" class="number" >9</button>
-        <button onclick="" class="symbol" id="times">&times;</button>
+        <button class="button number">7</button>
+        <button class="button number">8</button>
+        <button class="button number">9</button>
+        <button class="button symbol operator">x</button>
         
-        <button onclick="" class="number">4</button>
-        <button onclick="" class="number">5</button>
-        <button onclick="" class="number">6</button>
-        <button onclick="" class="symbol" id="minus">-</button>
+        <button class="button number">4</button>
+        <button class="button number">5</button>
+        <button class="button number">6</button>
+        <button class="button symbol operator">-</button>
 
-        <button onclick="" class="number" >1</button>
-        <button onclick="" class="number" >2</button>
-        <button onclick="" class="number" >3</button>
-        <button onclick="" class="symbol" id="plus">+</button>
+        <button class="button number">1</button>
+        <button class="button number">2</button>
+        <button class="button number">3</button>
+        <button class="button symbol operator">+</button>
 
-        <button onclick="" class="number " >.</button>
-        <button onclick="" class="number zero" >0</button>
-        <button onclick="" class="number" id="del">&#10094;</button>
-        <button onclick="" class="symbol" id="result">=</button>
+        <button class="button number btn-0">0</button>
+        <button class="button number dot">.</button>
+        
+        <button class="button symbol equal" >=</button>
+
     </div>
 
-
-
     <script src="main.js"></script>
+
 </body>
 </html>
