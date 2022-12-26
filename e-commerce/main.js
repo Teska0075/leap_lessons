@@ -5,14 +5,21 @@ const productList = document.querySelector(".productList");
 let allProducts = [];
 console.log(productList);
 
+const getProducts = async () => {
+    const response = await fetch('https://dummyjson.com/products');
+    const data = await response.json();
+    allProducts = data.products;
+    // console.log(data);
+    displayProduct();
+};
+
+getProducts();
 
 const displayProduct = () => {
-    console.log(allProducts);
     allProducts.forEach((product) => {
-        console.log("d",product);
-        const card = `<div class="col-12 bg-light m-1 p-3 d-flex gap-1 flex-wrap productList ">
-        <div class="card border-0 rounded-0 col-4">
-            <img src="./img/iphone9 1.png" class="card-img-top" class="" alt="...">
+        // console.log(product);
+        const item = `<div class="card border-0 rounded-0 col-4">
+            <img src="${product.thumbnail}" class="card-img-top" class="" alt="...">
             <div class="card-body d-flex flex-column">
                 <h3 class="card-title text-center fw-light">${product.title}</h3>
                 <h6 class="col-7 p-1 ms-auto fs-6 bg-primary-emphasis text-success">12.96% OFF</h6>
@@ -28,21 +35,10 @@ const displayProduct = () => {
                 </div>
                 <button href="#" class="btn border-primary text-primary col-6 ms-auto"><i class="bi-thin bi-heart"></i> Watch</button>
             </div>
-        </div>
-    </div>`;
-        productList.innerHMTL += card;
-    }
-);
-
+        </div>`;
+        productList.innerHMTL += item;
+        console.log(`123`);
+    });
 };
 
-const getProducts = async() => {
-    const response = await fetch('https://dummyjson.com/products');
-    const data = await response.json(); // object 
-    allProducts = data.products;
-    // console.log(allProducts);
-    displayProduct();
-};
-
-
-// getProducts();
+displayProduct();
