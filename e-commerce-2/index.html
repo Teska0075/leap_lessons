@@ -10,74 +10,129 @@
     <title>Ecommerce</title>
 </head>
 <body>
-    <nav class="navbar ">
+    <nav class="navbar mt-1">
         <div class="container-fluid d-flex justify-content-between">
-            
-            <a class="navbar-brand">E-commerce</a>
+            <div class="d-flex gap-3">
+                <div class="logo d-flex align-items-center justify-content-center">S</div>
+                <a class="navbar-brand">E-commerce</a>
+            </div>
 
             <div class="input-group input-group-sm border-0 w-50" role="search">
-                <span class="input-group-text bg-light border-0 border-end-0 rounded-start-5" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span class="input-group-text bg-light border-0 border-end-0 rounded-start-5" id="addon-wrapping"><i class="bi-solid bi-search text-muted"></i></span>
                 <input class="form-control bg-light border-0 border-start-0 rounded-end-5" type="search" placeholder="Search ...">
             </div>
             
-            <div class="buttons">
+            <div class="buttons d-flex gap-3">
                 <a class="btn border-primary text-primary">Sign in</a>
                 <a class="btn bg-light position-relative text-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" style="box-shadow: 0px 0px 5px 1px rgba(0,87,255,1);">
                     My cart
-                    <span class="position-absolute top-0 start-100 translate-middle p-2 badge border border-light rounded-circle bg-danger">
-                        5
+                    <span class="position-absolute top-0 start-100 translate-middle p-2 badge border border-light rounded-circle bg-danger cartCount">
+                        
                     </span>
                 </a>
+                <div class="profile-pic">
+                    <img src="img/Edward Powlowski.svg" alt="">
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- categories will be here -->
+    <div class="container-fluid d-flex justify-content-center">
+        <ul class="list d-flex justify-content-between" style="width: 75%;">
+            <a href="">
+                <li>Smartphone</li>
+            </a>
+            <a href="">
+                <li>Entertainment</li>
+            </a>
+            <a href="">
+                <li>Laptops</li>
+            </a>
+            <a href="">
+                <li>Fragrances</li>
+            </a>
+            <a href="">
+                <li>Skincare</li>
+            </a>
+            <a href="">
+                <li>Groceries</li>
+            </a>
+            <a href="">
+                <li>Home-decoration</li>
+            </a>
+            <a href="">
+                <li>Furniture</li>
+            </a>
+            <a href="">
+                <li>Tops</li>
+            </a>
+            <a href="">
+                <li>Womens-dresses</li>
+            </a>
+            <a href="">
+                <li>Womens-shoes</li>
+            </a>
+            <a href="">
+                <li>Womens-watches</li>
+            </a>
+            <a href="">
+                <li>Mens-shirts</li>
+            </a>
+            <a href="">
+                <li>Mens-shoes</li>
+            </a>
+            <a href="">
+                <li>Mens-watches</li>
+            </a>
+        </ul>
+
+    </div>
+    <!-- categories will be here -->    
 
     <div class="container mt-5">
         <section class="d-flex">
             <div class="left col-2 m-1 bg-dark">    
             </div>
 
-            <div class="right d-flex col-12 productList flex-wrap gap-5">
+            <div class="right d-flex col-12 m-5 productList flex-wrap gap-5">
               
             </div>
         </section>
     </div>
 
-
-    <!-- <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasLabel">My cart</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-          123
-        </div>
-      </div> -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <!-- cart sidebar -->
+    <div class="offcanvas offcanvas-end" tabindex="1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">My Cart</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
     
-        <div class="offcanvas-body">
-            <div>
-              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-            </div>
-            
-            <div class="dropdown mt-3">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                    Dropdown button
-                </button>
-                
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-          </div>
+        <div class="offcanvas-body cartList">
+                <!-- <div class="card  p-4">
+                    <div class="row  d-flex align-items-center">
+                        <div class="d-flex flex-column col-1 align-items-center">
+                            <button class="btn border border-1">+</button>
+                            <span class="my-2">2</span>
+                            <button class="btn border border-1">-</button>
+                        </div>
+                        <div class="col-4 ">
+                            <img class="card-img w-100 h-80" src="https://images.unsplash.com/photo-1661961110671-77b71b929d52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"  alt="">
+                        </div>
+                        
+                        <div class="col-4 ">
+                            <h3 class="card-title fs-5">Chromebook</h3>
+                            <h5 class="fs-2 text-primary">$120.00</h4>
+                            <h3 class="fs-6 fw-light  text-muted">2 X</h3>
+                        </div>
+                        
+                        <div class="col-3 d-flex align-items-center border-start border-2">
+                            <h5 class="ms-3">$240.00</h4>
+                            
+                        </div>
+                    </div>
+                </div> -->
         </div>
     </div>
 

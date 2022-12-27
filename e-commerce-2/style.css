@@ -1,0 +1,26 @@
+.offcanvas{
+    width: 700px !important;
+}
+
+.list a, li {
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+.logo{
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    background: linear-gradient(90deg, #2979FF 0%, #4C589E 100%);
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+.profile-pic{
+    background: url(photo-1502937406922-305bb2789e95.jpg);
+    border-radius: 99px;
+}
