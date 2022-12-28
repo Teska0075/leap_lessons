@@ -11,23 +11,38 @@
 </head>
 <body>
     <!-- navigation -->
-    <nav class="navbar mt-1">
+    <nav class="navbar sticky-top">
         <div class="container-fluid d-flex justify-content-between">
             <div class="d-flex gap-3">
-                <div class="logo d-flex align-items-center justify-content-center">S</div>
-                <a class="navbar-brand">E-commerce</a>
+                <div class="logo fw-light d-flex align-items-center justify-content-center mt-1 ms-1">S</div>
+                <a class="navbar-brand text-white">E-commerce</a>
             </div>
 
             <div class="input-group input-group-sm border-0 w-50" role="search">
-                <span class="input-group-text bg-light border-0 border-end-0 rounded-start-5" id="addon-wrapping"><i class="bi-solid bi-search text-muted"></i></span>
+                <div class="btn-group">
+                    <button type="button" class="btn border-0 border-end-0 rounded-end-0 rounded-start-5 dropdown-toggle text-white" data-bs-toggle="dropdown" style="background: linear-gradient(90deg, #2979FF 0%, #4C589E 100%);" aria-expanded="false">
+                      Categories
+                    </button>
+
+                    <ul class="dropdown-menu"> 
+                      <!-- <li><a class="dropdown-item " href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Separated link</a></li> -->
+                    </ul>
+
+                </div>
+                
+                <span class="input-group-text bg-light border-0" id="addon-wrapping"><i class="bi-solid bi-search text-muted"></i></span>
                 <input class="form-control bg-light border-0 border-start-0 rounded-end-5" type="search" placeholder="Search ...">
             </div>
-            
+
             <div class="buttons d-flex gap-3">
-                <a class="btn border-primary text-primary">Sign in</a>
-                <a class="btn bg-light position-relative text-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" style="box-shadow: 0px 0px 5px 1px rgba(0,87,255,1);">
+                <a class="btn border-white text-white">Sign in</a>
+                <a class="btn bg-none position-relative text-white" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" style="box-shadow: 0px 0px 2px 1px rgb(255, 255, 255);">
                     My cart
-                    <span class="position-absolute top-0 start-100 translate-middle p-2 badge border border-light rounded-circle bg-danger cartCount">
+                    <span id="cartCount" class="position-absolute top-0 start-100 translate-middle p-2 badge border border-light rounded-circle bg-danger cartCount">
                         
                     </span>
                 </a>
@@ -39,7 +54,7 @@
     </nav>
     <!-- navigation -->
     <!-- category -->
-    <div class="container-fluid d-flex justify-content-center">
+    <!-- <div class="container-fluid d-flex justify-content-center mt-3">
         <ul class="list d-flex justify-content-between" style="width: 75%;">
             <a href="">
                 <li>Smartphone</li>
@@ -88,19 +103,20 @@
             </a>
         </ul>
 
-    </div>
+    </div> -->
     <!-- category -->
     <!-- carousel -->
+
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/11_9-large-bnr.jpg" class="d-block w-60" style="height: 600px;" alt="...">
+            <img src="img/khna-bank-cashback-main-banner-web.webp" class="d-block w-100 h-75" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/ny-banner-large.jpg" class="d-block w-60" style="height: 600px;" alt="...">
+            <img src="img/newyear_banner_web_FINISH.webp" class="d-block w-100 h-75" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="img/6068184.jpg" class="d-block w-60" style="height: 600px;"alt="">
+            <img src="img/Shoppy-Box-Banner-web.webp" class="d-block w-100 h-70" alt="">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -111,12 +127,12 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+    </div>
     <!-- carousel -->
     <!-- sidebar -->
     <div class="container mt-5">
         <section class="d-flex">
-            <div class="left col-2 m-1 bg-dark">    
+            <div class="left col-2 m-1 bg-dark categoryList">    
             </div>
 
             <div class="right d-flex col-12 m-5 productList flex-wrap gap-5">
@@ -153,10 +169,21 @@
                         
                         <div class="col-3 d-flex align-items-center border-start border-2">
                             <h5 class="ms-3">$240.00</h4>
-                            
+                            <p>123</p>
+                            <button class="btn"><i class="bi bi-trash-fill text-danger fs-4 ms-4"></i></button>
                         </div>
                     </div>
                 </div> -->
+        </div>
+        <div class="modal-footer">
+            <div class="d-flex justify-content-between p-2 mb-2" style="background-color: #e1f5fe;">
+                <h5 class="fw-bold mb-0 me-1">Total:</h5>
+                <h5 class="fw-bold mb-0 cartPrice">$450</h5>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-secondary m-2" type="button" data-bs-dismiss="offcanvas">Close</button>
+            <button class="btn btn-primary m-2 p-2" type="button">Buy</button>
         </div>
     </div>
 
