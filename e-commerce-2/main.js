@@ -22,7 +22,6 @@ const getCategories = async () => {
 getCategories();
 
 const getProducts = async () => {
-
     const response = await fetch('https://dummyjson.com/products');
     const data = await response.json();    
     allProducts = data.products;
