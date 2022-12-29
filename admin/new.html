@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container col-10 mt-2">
+        <h1>Add new product</h1>
+        <!-- Category -->
+        <div class="mb-3">
+            <label for="productCategory" class="form-label">Choose category</label>
+            <select id="productCategory" class="form-select">
+              <option id="category" value="1">1</option>
+              <option id="category" value="2">2</option>
+              <option id="category" value="3">3</option>
+              <option id="category" value="4">4</option>
+              <option id="category" value="5">5</option>
+            </select>
+        </div>
+        <!-- Name -->
+        <div class="mb-3">
+            <label for="productName" class="form-label">Product name</label>
+            <input type="text" class="form-control" id="productName" placeholder="" value="">
+        </div>
+        <!-- Price -->
+        <div class="mb-3">
+            <label for="productPrice" class="form-label">Product price</label>
+            <input type="text" class="form-control" id="productPrice" placeholder="" value="">
+        </div>
+        <!-- Photo -->
+        <div class="mb-3">
+            <label for="productPhoto" class="form-label">Photo</label>
+            <input class="form-control" type="file" id="productPhoto">
+        </div>
+        <!-- Special -->
+        <div class="mb-3">
+            <p>Special product</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="specialProductYes">
+
+                <label class="form-check-label" for="specialProductYes">
+                  Yes
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="specialProductNo">
+
+                <label class="form-check-label" for="specialProductNo">
+                  No
+                </label>
+            </div>
+        </div>
+        <!-- Week days -->
+        <div class="mb-3">
+            <p>Choose day</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="weekDays">
+             
+                <label class="form-check-label" for="weekDays">
+                  Monday
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="weekDays">
+             
+                <label class="form-check-label" for="weekDays">
+                  Tuesday
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="weekDays">
+             
+                <label class="form-check-label" for="weekDays">
+                  Wednesday
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="weekDays">
+             
+                <label class="form-check-label" for="weekDays">
+                  Thursday
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="weekDays">
+             
+                <label class="form-check-label" for="weekDays">
+                  Friday
+                </label>
+            </div>
+        </div>
+
+        <button onclick="postData(this)" id="saveItem" class="btn btn-primary">Save</button>
+    </div>
+    <script src="new.js"></script>
+</body>
+</html>
