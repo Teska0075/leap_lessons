@@ -20,7 +20,7 @@ body{
     border-radius: 60px;
     background-color: #2f2e31;
     padding: 10px;
-    box-shadow: 5px 5px 12px #060606,
+    box-shadow: 5px 5px 12px #000000,
     -5px -5px 12px rgba(0, 0, 0, 0.16);
     display: grid;
     grid-template-columns: repeat(4,80px);
